@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /alibesar
+
+COPY alibesar.java .
+
+RUN javac alibesar.java
+
+CMD java alibesar 
